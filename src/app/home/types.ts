@@ -5,6 +5,12 @@ export type LatestMessagingUser = {
   latestMessage: string;
 };
 
+export type ChatMessage = {
+  senderId: string;
+  receiverId: string;
+  message: string;
+};
+
 export const dummyUser: LatestMessagingUser[] = [
   {
     id: 1,
