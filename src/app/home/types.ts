@@ -7,15 +7,16 @@ export type LatestMessagingUser = {
 
 export type ChatMessage = {
   senderId: string;
-  receiverId: string;
-  message: string;
+  receivedUserId?: string;
+  receivedGroupId?: string;
+  messageBody: string;
 };
 
 export const dummyUser: LatestMessagingUser[] = [
   {
     id: 1,
-    email: "hienhien@example.com",
-    fullName: "Hiền Hiền",
+    email: "letho@example.com",
+    fullName: "Lê Thọ",
     latestMessage: "Hey, how are you?",
   },
   {

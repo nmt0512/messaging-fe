@@ -8,8 +8,8 @@ import { ChatMessage } from "../types";
 
 const testMessage: ChatMessage = {
   senderId: "1",
-  receiverId: "1",
-  message: "test-message",
+  receivedUserId: "1",
+  messageBody: "test-message",
 };
 
 export default function ChatDetail() {
